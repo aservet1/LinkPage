@@ -5,7 +5,7 @@ This project started out because I had an HTML page where I was storing a bunch 
 of all of the Zoom links for my courses, but then I started adding a bunch of other relevant links. Then I bookmarked the local file from my web browser and
 it's pretty much a website to consolidate my links, although it's not accessible outside of my computer.
 
-Unfortuantely, it became cumbersome to directly edit the HTML page when I wanted to add or update links. So I decided it would be fun and a good exercise
+It became cumbersome to directly edit the HTML page when I wanted to add or update links. So I decided it would be fun and a good exercise
 to create a syntax that would be easy to edit and a script that would generate the HTML for me. The syntax is as follows:
 
 ```
