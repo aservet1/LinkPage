@@ -1,0 +1,23 @@
+
+body {
+  background-color: CornflowerBlue
+}
+
+a:link {
+  color: DarkSlateGray;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: DarkSlateGray;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active{
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
+
