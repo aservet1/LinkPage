@@ -1,7 +1,5 @@
 from sys import argv
 
-'''----------------------------------------------------------------------'''
-
 def make_html_list(data,i):
 	htmlcode = list()
 
@@ -27,8 +25,6 @@ def make_html_list(data,i):
 	htmlcode.append("</ul>")
 
 	return htmlcode
-
-'''----------------------------------------------------------------------'''
 
 def generate_top_menu_nav(data):
 
@@ -57,13 +53,13 @@ def generate_htmlcode(data):
 
 	return htmlcode
 
-'''----------------------------------------------------------------------'''
-
 def write_to_file(htmlcode, htmlfile):
 	with open(htmlfile,'w') as fh:
 		fh.write('\n'.join(htmlcode))
 
-'''----------------------------------------------------------------------'''
+if len(argv) == 1:
+	print(f"usage: {argv[0]} SourceFile.source")
+	exit(1)
 
 sourcefile = argv[1]
 htmlfile = sourcefile.replace('.source','.html')
