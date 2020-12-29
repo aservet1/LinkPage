@@ -26,8 +26,9 @@ The `<$>` indicates the end of each section.
 Whitespace at the beginning and end of each line is ignored, so use whatever whitespace you'd like to format. Just make sure each entry is on a separate line.
 
 The source file has a `.source` extension and will compile into a `.html` file of the same name. You can optionally have a `.css` file of the same name.
+My example file is called `CourseLinks.source` but it can have any name.
 
-Compile to html with `python3 compile.py SourceFileName.source` and it will output `SourceFileName.html`
+Compile to html with `python3 compile.py SourceFileName.source` and it will output `SourceFileName.html`.
 
 ## Dependencies
 Python3
