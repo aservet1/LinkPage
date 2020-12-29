@@ -58,7 +58,7 @@ def write_to_file(htmlcode, htmlfile):
 		fh.write('\n'.join(htmlcode))
 
 if len(argv) == 1:
-	print(f"usage: {argv[0]} SourceFile.source")
+	print(f"usage: python3 {argv[0]} SourceFile.source")
 	exit(1)
 
 sourcefile = argv[1]
