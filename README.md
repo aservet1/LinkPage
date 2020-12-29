@@ -29,5 +29,5 @@ The source file has a `.source` extension and will compile into a `.html` file o
 
 Compile to html with `python3 compile.py SourceFileName.source` and it will output `SourceFileName.html`
 
-##Dependencies
+## Dependencies
 Python3
