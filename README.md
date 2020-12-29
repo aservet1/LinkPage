@@ -25,8 +25,10 @@ Section 2 Title
 The `<$>` indicates the end of each section.
 Whitespace at the beginning and end of each line is ignored, so use whatever whitespace you'd like to format. Just make sure each entry is on a separate line.
 
-The source file has a `.source` extension and will compile into a `.html` file of the same name. You can optionally have a `.css` file of the same name.
-My example file is called `CourseLinks.source` but it can have any name.
+The source file has a `.source` extension and will compile into a `.html` file of the same name. You can optionally have a `.css` file of the same name. I used
+to set the background color and link colors. You can use it for whatever you want though, just like any CSS file that you would include in an HTML file.
+
+My example file is called `CourseLinks.source` but you can name it anything you want as long as it's a `.source` file.
 
 Compile to html with `python3 compile.py SourceFileName.source` and it will output `SourceFileName.html`.
 
