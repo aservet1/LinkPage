@@ -1,4 +1,4 @@
-# LinkPage
+# LinkSyntax
 I made a syntax to generate HTML for a list of hyperlinks.
 
 This project started out because I had an HTML page where I was storing a bunch of relevant links in one place. Mostly because it was hard to keep track
