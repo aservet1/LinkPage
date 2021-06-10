@@ -10,7 +10,7 @@ It became cumbersome to directly edit the HTML page when I wanted to add or upda
 to create a syntax that would be easy to edit and a script that would generate the HTML for me. This made it a lot easier to look through
 and edit instead of parsing the unnecessary words and symbols of HTML code.
 
-The syntax is as follows:
+## The Syntax
 
 ```
 Page Title <$>
@@ -29,17 +29,26 @@ Section 2 Title
 The `<$>` indicates the end of each section.
 Whitespace at the beginning and end of each line is ignored, so use whatever whitespace you'd like to format. Just make sure each entry is on a separate line.
 
-The source file has a `.source` extension and will compile into a `.html` file of the same name. You can optionally have a `.css` file of the same name. I used
-to set the background color and link colors. You can use it for whatever you want though, just like any CSS file that you would include in an HTML file.
 
-My example file is called `CourseLinks.source` but you can name it anything you want, as long as it has a `.source` extension.
+## Files Involved
 
-Compile to html with `python3 compile.py SourceFileName.source` and it will output `SourceFileName.html`.
+The source file has a `.source` extension and will compile into a `.html` file of the same name. The HTML is machine generated, so it's not formatted nicely for human eyes to see or edit. If you want to change the file, either edit the `.source` or `compile.py` if you want to do some fundamental change to the structure.
 
-I also have a handy script, `./edit.sh` which opens up the source file in a text editor and compiles it once you close it. If you know how to, you
-can even set up a desktop icon to run the script, so editing your list is as simple as clicking on the button.
+You can optionally have a `.css` file of the same name. I used to set the background color and link colors. You can use it for whatever you want though, just like any CSS file that you would include in an HTML file.
 
-Bookmark the local file location in your browser and you can click right to it whenever you want.
+My example file is called `CourseLinks.source` but you can name it anything you want, as long as it has the `.source` extension.
+
+
+## Usage
+
+Edit the entries of the `.source` file according to the syntax above.
+
+Compile to html with `python3 compile.py SourceFileName.source` and it will write to `SourceFileName.html`.
+
+I also have a handy Bash script, `./edit.sh` which opens up the source file in a text editor and compiles it when you're done. It's only a few lines, so you can easily edit it to pick your own file names or text editor. If you know how to, you can set up a Desktop icon to run the script, so editing your list is as simple as clicking on an icon. A few ways to do that are described [here](https://askubuntu.com/questions/299052/how-to-execute-sh-script-from-a-desktop-shortcut).
+
+Bookmark the local file path in your browser and you can click right to it whenever you want.
 
 ## Dependencies
 Python 3.6+
+Bash
