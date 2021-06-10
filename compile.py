@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from sys import argv
 
 def make_html_list(data,i):
@@ -57,13 +58,16 @@ def write_to_file(htmlcode, htmlfile):
 	with open(htmlfile,'w') as fh:
 		fh.write('\n'.join(htmlcode))
 
+'''----------------------------------------------'''
+
 if len(argv) == 1:
 	print(f"usage: python3 {argv[0]} SourceFile.source")
 	exit(1)
 
-sourcefile = argv[1]
+sourcefile = argv[1] if len(argv) > 1 else 'CourseLinks.source'
 htmlfile = sourcefile.replace('.source','.html')
 
-src = open(sourcefile,'r'); data = src.read(); src.close()
-htmlcode = generate_htmlcode(data)
-write_to_file(htmlcode, htmlfile)
+with open(sourcefile,'r') as src:
+    data = src.read()
+    htmlcode = generate_htmlcode(data)
+    write_to_file(htmlcode, htmlfile)
