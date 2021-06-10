@@ -2,12 +2,12 @@
 I made a syntax to generate HTML for a list of hyperlinks.
 
 This project started out because I had an HTML page where I was storing a bunch of relevant links in one place. It was mostly to keep track
-of all of the Zoom links for my online courses at the start of the pandemic, but then I started adding a bunch of other relevant links.
-I bookmarked the local file from my web browser and it became a really convenient way to find stuff without clicking through several web pages,
-especially with my then-incredibly-slow $150 laptop that I couldn't even run Gmail on; I needed to open it with the legacy HTML version.
+of all of the Zoom links for my online courses at the start of the pandemic.
+I bookmarked the local file from my web browser and it became a convenient way to find stuff without clicking through a bunch of web pages,
+especially with my then-incredibly-slow laptop that took at least a minute to load Gmail unless I used the old HTML version.
 
 It became cumbersome to directly edit the HTML page when I wanted to add or update links. So I decided it would be fun and a good exercise
-to create a syntax that would be easy to edit and a script that would generate the HTML for me. This made it a lot easier to look through
+to create a syntax that would be easy to edit and a program that would generate the HTML for me. This made it a lot easier to look through
 and edit instead of parsing the unnecessary words and symbols of HTML code.
 
 ## The Syntax
@@ -51,4 +51,3 @@ Bookmark the local file path in your browser and you can click right to it whene
 
 ## Dependencies
 Python 3.6+
-Bash
