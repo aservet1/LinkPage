@@ -1,0 +1,40 @@
+## Sketching out the grammar rules
+
+WholeThing
+	: title delimiter lists
+	;
+
+title
+	: <any valid string>
+	;
+
+lists
+	: list delimiter lists
+	| ''
+	;
+
+list
+	: title '\n' listItems
+	;
+
+listItems
+	: listItem '\n' listItems
+	| ''
+	;
+
+listItem
+	: name '::' hyperlink
+	;
+
+name
+	: <any valid string>
+	;
+
+hyperlink
+	: <any valid string>
+	| ''
+	;
+
+delimiter
+	: '<$>'
+	;
