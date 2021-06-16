@@ -56,6 +56,7 @@ def generate_htmlcode(data):
 
 def write_to_file(htmlcode, htmlfile):
 	with open(htmlfile,'w') as fh:
+		fh.write('<!-- This HTML is machine generated -->\n')
 		fh.write('\n'.join(htmlcode))
 
 '''----------------------------------------------'''
