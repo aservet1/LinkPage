@@ -10,23 +10,32 @@ It became cumbersome to directly edit the HTML page when I wanted to add or upda
 to create a syntax that would be easy to edit and a program that would generate the HTML for me. This made it a lot easier to look through
 and edit instead of parsing the unnecessary words and symbols of HTML code.
 
-## The Syntax
+## Example
 
 ```
-Page Title <$>
+CourseLinks <$>
 
-Section 1 Title
-  item1 :: url for item 1
-  item2 :: url for item 2
+Personal
+    Github			:: https://github.com/aservet1
 <$>
 
-Section 2 Title
-  item1 :: url for item 1
-  item2 :: url for item 2
+jRAPL
+    Slack			:: https://app.slack.com/client/T01RWDJKNHY/C01RFLY4WQ7
+    Liu Zoom Room		:: https://binghamton.zoom.us/my/yu.david.liu
+    Github			:: https://github.com/aservet1/jRAPL
+    Overleaf Paper		:: https://www.overleaf.com/project/5e8bed3318eddd0001296834
+    GreenSoftwareLab Github	:: https://github.com/greensoftwarelab
+<$>
+
+CS447 - High Performance Computing
+    Zoom		:: https://binghamton.zoom.us/j/97137731406
+    Piazza		:: https://piazza.com/class/kj3g1vwdbav5pl
+    Website		:: https://www.cs.binghamton.edu/%7Ekchiu/cs447/
 <$>
 ```
 
-The `<$>` indicates the end of each section.
+![image](https://user-images.githubusercontent.com/54599694/122161024-f5ad4680-ce3e-11eb-8c4d-944036618587.png)
+
 Whitespace at the beginning and end of each line is ignored, so use whatever whitespace you'd like to format. Just make sure each entry is on a separate line.
 
 
